@@ -1,0 +1,73 @@
+﻿# ==============================================================================
+# High-Fidelity Configuration File for the Benford's Law Replication Study
+# ==============================================================================
+# This file contains all non-data input parameters required to reproduce the
+# findings of the paper "Note on pre-taxation reported data by UK FTSE-listed
+# companies. A search for Benford’s laws compatibility" by Ausloos et al. (2025).
+# This object represents the complete methodological configuration, decoupled
+# from the primary data structures and executable code.
+# ==============================================================================
+
+# --------------------------------------------------------------------------
+# Section 1: Data Acquisition Parameters
+# Source: Section 3.1 "Data Acquisition"
+# --------------------------------------------------------------------------
+data_source:
+  platform: 'Refinitiv EIKON'
+  company_universe: 'FTSE All-Share Index'
+  universe_year: 2022
+  company_count: 567
+  time_period_start: 2009
+  time_period_end: 2022
+  currency: 'GBP'
+  fiscal_year_definition: 'Absolute Fiscal Year (FY)'
+  eikon_instruments:
+    pre_tax_income: 'net income before taxes'
+    total_assets: 'total assets reported'
+
+# --------------------------------------------------------------------------
+# Section 2: Benford's Law Definitions
+# Source: Section 3.2 "Study Methodology"
+# --------------------------------------------------------------------------
+benford_laws:
+  BL1:
+    name: "First-Digit Law"
+    equation: "log10(1 + 1/i)"
+    bins: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    degrees_of_freedom: 8
+  BL2:
+    name: "Second-Digit Law"
+    equation: "sum_{k=1 to 9} log10(1 + 1/(10k + j))"
+    bins: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    degrees_of_freedom: 9
+  BL12:
+    name: "First-Two-Digit Law"
+    equation: "log10(1 + 1/(ij))"
+    bins: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+    degrees_of_freedom: 89
+
+# --------------------------------------------------------------------------
+# Section 3: Statistical Test Configuration
+# Source: Section 4 "Findings" and surrounding text
+# --------------------------------------------------------------------------
+statistical_tests:
+  chi_squared:
+    name: "Pearson's Chi-Squared Test"
+    equation: "sum((O_i - E_i)^2 / E_i)"
+    alpha: 0.05
+    critical_values:
+      8: 15.507
+      9: 16.919
+      89: 113.145
+  mad:
+    name: "Mean Absolute Deviation"
+    equation: "sum(|f_o - f_e|)"
+    conformity_thresholds:
+      BL1:
+        close_conformity: 0.006
+        acceptable_conformity: 0.012
+        marginally_acceptable: 0.015
+      BL2:
+        close_conformity: 0.008
+      BL12:
+        close_conformity: 0.0012
