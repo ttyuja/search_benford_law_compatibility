@@ -1,0 +1,90 @@
+﻿# =============================================================================
+# Requirements File for Benford's Law Financial Data Analysis Framework
+# =============================================================================
+#
+# This requirements.txt file specifies the exact dependencies needed for the
+# scalable framework for probabilistic screening of large numerical datasets
+# using Benford's Law conformity testing. All versions are pinned for maximum
+# reproducibility and stability in production environments.
+#
+# Compatible with Python 3.8+
+#
+# Installation: pip install -r requirements.txt
+#
+# Author: CS Chirinda
+# Version: 1.0.0
+# License: MIT
+# =============================================================================
+
+# =============================================================================
+# Core Scientific Computing Stack
+# =============================================================================
+
+# NumPy: Fundamental package for array computing and mathematical operations
+# Used for vectorized numerical computations, logarithmic operations, and
+# high-precision floating-point arithmetic required for Benford's Law calculations
+numpy==1.24.3
+
+# Pandas: Data manipulation and analysis library  
+# Used for DataFrame operations, data type checking, and financial data processing
+# Includes pandas.api.types for robust data type validation
+pandas==2.0.3
+
+# SciPy: Scientific computing library
+# Used for statistical functions including:
+# - scipy.stats.chi2: Chi-squared distribution and critical values
+# - scipy.stats.kurtosis: Kurtosis calculation for distribution analysis
+# - scipy.stats.median_abs_deviation: Robust deviation measures
+# - scipy.stats.skew: Skewness calculation for asymmetry detection
+scipy==1.10.1
+
+# =============================================================================
+# Progress Monitoring and User Interface
+# =============================================================================
+
+# tqdm: Progress bar library for long-running computations
+# Essential for monitoring large dataset processing and bootstrap operations
+tqdm==4.65.0
+
+# =============================================================================
+# Development and Quality Assurance (Optional but Recommended)
+# =============================================================================
+
+# pytest: Testing framework for unit and integration tests
+# pytest==7.4.0
+
+# black: Code formatter for PEP-8 compliance
+# black==23.3.0
+
+# mypy: Static type checker for type hint validation
+# mypy==1.4.1
+
+# flake8: Linting tool for code quality assurance  
+# flake8==6.0.0
+
+# =============================================================================
+# Performance Optimization (Optional)
+# =============================================================================
+
+# numba: JIT compiler for numerical functions (optional performance enhancement)
+# numba==0.57.1
+
+# =============================================================================
+# Version Compatibility Notes
+# =============================================================================
+#
+# Python Version: 3.8+
+# 
+# These versions have been selected for:
+# 1. Stability: Well-tested in production environments
+# 2. Performance: Optimized for large-scale numerical computations
+# 3. Compatibility: Proven interoperability between packages
+# 4. Security: Recent releases with known vulnerability patches
+#
+# Critical Compatibility Requirements:
+# - NumPy 1.24.3 provides stable float64 precision for Benford calculations
+# - Pandas 2.0.3 includes performance improvements for large dataset operations
+# - SciPy 1.10.1 contains updated statistical functions with improved accuracy
+# - All versions tested together for numerical consistency
+#
+# =============================================================================
